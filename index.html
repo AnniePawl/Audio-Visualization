@@ -6,18 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <!-- Link to Coda Font -->
+  <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap"
+    rel="stylesheet">
+  <!-- Link to Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet">
+  <!-- Link to Style Sheet -->
+  <link rel='stylesheet' href='styles/styles.css'>
+
 </head>
 
 <body>
-  <h1> Audio Visualzation </h1>
-  <!-- Canvas -->
-  <canvas id='canvas' width='300' height='300'></canvas>
-  <!-- Play Button -->
-  <button id='play-button'>Play</button>
-  <!-- Script -->
-  <script src='audio.js'>
-  </script>
+  <div class='container'>
 
+    <div class='heading'>
+      <h1>Audio</h1>
+      <h2>Visualizations</h2>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id='canvas' width='300' height='300'></canvas>
+
+    <!-- Play Button -->
+    <button class='play-button' id='play-button'>Play</button>
+
+    <!-- Script -->
+    <script src='audio.js'>
+    </script>
+
+  </div>
 </body>
 
 </html>
