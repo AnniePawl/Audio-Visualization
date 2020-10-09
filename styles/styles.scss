@@ -9,10 +9,11 @@
   flex-direction:column;
 }
 
-.heading {
-  @include centerFlex();
-  flex-direction: column;
+html{
+  height:100%;
+  background: radial-gradient(#dfff52, #59fff9 );
 }
+
 
 h1 {
   @include centerFlex();
@@ -37,8 +38,14 @@ h2 {
   border-radius: 5px;
   text-transform: uppercase;
   font-family: 'Coda Caption', sans-serif;
-  font-size:1.1em;
+  font-size:1em;
   font-weight: 700;
+  margin:5px;
+}
+
+.play-buttons {
+  @include centerFlex();
+  flex-direction: row;
 }
 
 #canvas {
