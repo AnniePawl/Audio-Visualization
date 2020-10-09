@@ -1,3 +1,7 @@
+$green: #dfff52;
+$blue: #1c5d69;
+
+
 @mixin centerFlex {
   display: flex;
   justify-content: center;
@@ -21,7 +25,7 @@ h1 {
   text-transform: uppercase;
   font-size:2.5em;
   margin-bottom: 0;
-  
+  color:$blue;
 }
 
 h2 {
@@ -34,13 +38,21 @@ h2 {
 
 .play-button {
   height:40px;
-  width:80px;
+  width:120px;
   border-radius: 5px;
   text-transform: uppercase;
   font-family: 'Coda Caption', sans-serif;
+  color:#dfff52;
   font-size:1em;
   font-weight: 700;
   margin:5px;
+  background-color:$blue;
+  border:none;
+}
+
+.play-button:hover {
+  background-color: #ff8375;
+  transform: scale(.9);
 }
 
 .play-buttons {
@@ -48,10 +60,15 @@ h2 {
   flex-direction: row;
 }
 
+
 #canvas {
   @include centerFlex()
 }
 
 .play-button {
+  @include centerFlex()
+}
+
+#canvas.canvas-container {
   @include centerFlex()
 }

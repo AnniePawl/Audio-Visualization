@@ -53,21 +53,23 @@ playButton.addEventListener('click', (e) => {
   playButton.innerHTML = !playing ? 'pause' : 'classical'
   startAudio('./sound-files/new-dawn.mp3')
 })
-// Play Button2 -----------------------------------
+// Play Button2 (Jazz) -----------------------------------
 const playButton2 = document.getElementById('play-button2')
 playButton2.addEventListener('click', (e) => {
-  startAudio('./sound-files/jazzå.mp3')
+  playButton.innerHTML = !playing ? 'pause' : 'jazz'
+  startAudio('./sound-files/jazz.mp3')
 })
-// Play Button3 -----------------------------------
+// Play Button3 (Birds) -----------------------------------
 const playButton3 = document.getElementById('play-button3')
 playButton3.addEventListener('click', (e) => {
-  startAudio('bird-whistling-a.wav')
+  playButton.innerHTML = !playing ? 'pause' : 'birds'
+  startAudio('./sound-files/bird-whistling-a.wav.mp3')
 })
 // Play Button4 -----------------------------------
-const playButton4 = document.getElementById('play-button4')
-playButton4.addEventListener('click', (e) => {
-  startAudio('bird-whistling-a.wav')
-})
+// const playButton4 = document.getElementById('play-button4')
+// playButton4.addEventListener('click', (e) => {
+//   startAudio('bird-whistling-a.wav')
+// })
 
 //  Rendering Audio -------------------------------
 // Process: clear canvas, get array of frequency values from analyser, draw shape influenced by frequency
